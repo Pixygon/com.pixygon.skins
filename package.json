@@ -1,0 +1,26 @@
+{
+  "name": "com.pixygon.skins",
+  "version": "0.5.0",
+  "displayName": "Pixygon - Skins",
+  "description": "Skin system for Pixygon-games!",
+  "unity": "2023.1",
+  "unityRelease": "12f1",
+  "documentationUrl": "https://www.pixygon.io/dev/skins",
+  "changelogUrl": "https://www.pixygon.io/dev/skins/changelog",
+  "licensesUrl": "https://www.pixygon.io/dev/skins/license",
+  "dependencies": {
+    "com.pixygon.id": "0.5.0",
+    "com.pixygon.micro": "0.5.0",
+    "com.pixygon.nft": "0.5.0"
+ },
+"hideInEditor": false,
+ "keywords": [
+    "Pixygon",
+    "Skins"
+  ],
+  "author": {
+    "name": "Pixygon",
+    "email": "pixygon@pixygon.io",
+    "url": "https://www.pixygon.io"
+  }
+}
