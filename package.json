@@ -9,7 +9,7 @@
   "changelogUrl": "https://www.pixygon.io/dev/skins/changelog",
   "licensesUrl": "https://www.pixygon.io/dev/skins/license",
   "dependencies": {
-    "com.pixygon.id": "0.5.0",
+    "com.pixygon.idsystem": "0.5.0",
     "com.pixygon.micro": "0.5.0",
     "com.pixygon.nft": "0.5.0"
  },
