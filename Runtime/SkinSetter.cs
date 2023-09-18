@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Pixygon.Micro.Skins {
+namespace Pixygon.Skins {
     public class SkinSetter : MonoBehaviour {
         [SerializeField] private Animator _anim;
         [SerializeField] private AnimatorOverrideController[] _anims;

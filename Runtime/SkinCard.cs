@@ -1,8 +1,8 @@
 using Pixygon.NFT;
 using UnityEngine;
 
-namespace Pixygon.Micro {
-    [CreateAssetMenu(menuName = "PixygonMicro/New SkinCard")]
+namespace Pixygon.Skins {
+    [CreateAssetMenu(menuName = "Pixygon/New SkinCard")]
     public class SkinCard : ScriptableObject {
         public string _title;
         public string _collabPartner;

@@ -1,7 +1,7 @@
 ﻿using TMPro;
 using UnityEngine;
 
-namespace Pixygon.Micro.Skins {
+namespace Pixygon.Skins {
     public class SkinMenuSlot : SkinMenuSlotBase {
         [SerializeField] private TMP_Text _text;
         [SerializeField] private TMP_Text _cardIdText;

@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace Pixygon.Micro.Skins {
+namespace Pixygon.Skins {
     public class SkinMenuSlotBase : MonoBehaviour {
         [SerializeField] protected GameObject _activeFrame;
         [SerializeField] protected GameObject _lockObject;
