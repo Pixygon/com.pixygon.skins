@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Pixygon.Micro.Skins {
+namespace Pixygon.Skins {
     public class SkinMenuSlotUI : SkinMenuSlotBase {
         [SerializeField] private TextMeshProUGUI _text;
         [SerializeField] private TextMeshProUGUI _cardIdText;
