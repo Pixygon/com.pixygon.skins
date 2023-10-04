@@ -36,7 +36,11 @@ namespace Pixygon.Skins {
 
         private void SetEquipButton() {
             _equipButton.SetActive(CurrentSlot.IsUnlocked);
+            #if UNITY_IOS || UNITY_ANDROID
+            _purchaseButton.SetActive(false);
+            #else
             _purchaseButton.SetActive(!CurrentSlot.IsUnlocked);
+            #endif
         }
 
         public void Move(int x) {
