@@ -1,9 +1,12 @@
 using Pixygon.Core;
 using Pixygon.NFT;
+using UnityEditor;
 using UnityEngine;
 
 namespace Pixygon.Skins {
+    #if UNITY_EDITOR
     [CreateAssetMenu(menuName = "Pixygon/New SkinCard")]
+    #endif
     public class SkinCard : ScriptableObject {
         public string _title;
         public string _collabPartner;
@@ -19,6 +22,7 @@ namespace Pixygon.Skins {
         public string _purchaseUrl;
         public NFTLink _nftLink;
 
+#if UNITY_EDITOR
         private void SetRarity() {
             _rarity = _maxSupply switch {
                 1 => Rarity.Mythical,
@@ -30,6 +34,9 @@ namespace Pixygon.Skins {
                 >= 10000 => Rarity.Infinite,
                 _ => _rarity
             };
+            EditorUtility.IsDirty(this);
+            AssetDatabase.SaveAssets();
         }
+#endif
     }
 }
