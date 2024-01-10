@@ -12,13 +12,15 @@ namespace Pixygon.Skins {
         private SkinSetter[] _skinSetters;
 
         public Action<int> _skinSetterAction;
+        private bool _useNfts;
 
-        public void Populate(SkinSetter[] skinSetter) {
+        public void Populate(SkinSetter[] skinSetter, bool useNfts = false) {
             gameObject.SetActive(true);
             ClearInventory();
             _skinSetters = skinSetter;
             _currentSlot = 0;
             _slots[2].OnUnlock = SetEquipButton;
+            _useNfts = useNfts;
             RefreshInventory();
         }
 
@@ -39,7 +41,7 @@ namespace Pixygon.Skins {
             #if UNITY_IOS || UNITY_ANDROID
             _purchaseButton.SetActive(false);
             #else
-            _purchaseButton.SetActive(!CurrentSlot.IsUnlocked);
+            _purchaseButton.SetActive(!CurrentSlot.IsUnlocked && _useNfts);
             #endif
         }
 
